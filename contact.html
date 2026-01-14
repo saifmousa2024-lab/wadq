@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Al-Wadaq | Contact</title>
+  <meta name="description" content="Contact Al-Wadaq Wallpaper Manufacturing Co. Ltd." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container navbar">
+      <a class="brand" href="index.html" aria-label="Al-Wadaq">
+        <div class="logo">AW</div>
+        <div class="brand-text">
+          <strong>Al-Wadaq</strong>
+          <span>Babel, Iraq</span>
+        </div>
+      </a>
+
+      <button id="menuBtn" class="btn menu-btn" type="button">Menu</button>
+
+      <nav id="navLinks" class="links" aria-label="Navigation">
+        <a class="link" data-nav href="index.html">Home</a>
+        <a class="link" data-nav href="about.html">About</a>
+        <a class="link" data-nav href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn primary" href="contact.html">Request a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container grid two" style="align-items:start;">
+        <div class="card">
+          <span class="badge">Contact</span>
+          <h1>Contact & Message</h1>
+          <p class="muted">Send us your inquiry. (Saved locally in your browser for the assignment.)</p>
+
+          <div class="hr"></div>
+
+          <form id="feedbackForm">
+            <label>Full name
+              <input name="name" required />
+            </label>
+
+            <label>Email
+              <input name="email" type="email" required />
+            </label>
+
+            <label>Phone (optional)
+              <input name="phone" />
+            </label>
+
+            <label>Message
+              <textarea name="message" required></textarea>
+            </label>
+
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h2 style="margin-top:0;">Request a Quote</h2>
+
+          <form id="quoteForm">
+            <label>Project type
+              <select name="project">
+                <option>Residential</option>
+                <option>Commercial</option>
+                <option>Hospitality</option>
+              </select>
+            </label>
+
+            <label>Area (m²)
+              <input name="area" type="number" min="1" />
+            </label>
+
+            <label>Preferred style
+              <input name="style" placeholder="Modern / Classic / Textured" />
+            </label>
+
+            <button class="btn primary" type="submit">Submit Request</button>
+          </form>
+
+          <div class="hr"></div>
+
+          <div class="notice">
+            <div><strong>Phone</strong>: 9647811100000</div>
+            <div><strong>Email</strong>: info@alwadaq-wallpaper.com</div>
+            <div><strong>Address</strong>: Babel, Iraq</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div class="small">© <span id="year"></span> Al-Wadaq — All rights reserved</div>
+      <div class="small">Phone: 9647811100000</div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="main.js"></script>
+</body>
+</html>
